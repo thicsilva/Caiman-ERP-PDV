@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{EEE5B50A-8DAF-40E5-9FBC-83031014100E}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="CaimanERP\CaimanERP.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="CaimanNFCe\CaimanNFCe.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="CaimanERP">
+        <MSBuild Projects="CaimanERP\CaimanERP.dproj"/>
+    </Target>
+    <Target Name="CaimanERP:Clean">
+        <MSBuild Projects="CaimanERP\CaimanERP.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CaimanERP:Make">
+        <MSBuild Projects="CaimanERP\CaimanERP.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CaimanNFCe">
+        <MSBuild Projects="CaimanNFCe\CaimanNFCe.dproj"/>
+    </Target>
+    <Target Name="CaimanNFCe:Clean">
+        <MSBuild Projects="CaimanNFCe\CaimanNFCe.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CaimanNFCe:Make">
+        <MSBuild Projects="CaimanNFCe\CaimanNFCe.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="CaimanERP;CaimanNFCe"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="CaimanERP:Clean;CaimanNFCe:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="CaimanERP:Make;CaimanNFCe:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

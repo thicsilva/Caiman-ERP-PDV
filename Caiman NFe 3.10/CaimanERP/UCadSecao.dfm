@@ -1,0 +1,235 @@
+inherited FrmCadSecao: TFrmCadSecao
+  Left = 384
+  Top = 189
+  Caption = 'Cadastro de Se'#231#227'o'
+  ClientHeight = 412
+  ClientWidth = 368
+  OldCreateOrder = True
+  OnShow = FormShow
+  ExplicitWidth = 374
+  ExplicitHeight = 441
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited Shape1: TShape
+    Width = 368
+  end
+  inherited Panel1: TPanel
+    Width = 368
+    Height = 331
+    ExplicitTop = 61
+    ExplicitWidth = 368
+    ExplicitHeight = 331
+    object Label1: TLabel
+      Left = 8
+      Top = 8
+      Width = 38
+      Height = 13
+      Caption = 'C'#243'digo'
+    end
+    object Label2: TLabel
+      Left = 8
+      Top = 48
+      Width = 49
+      Height = 13
+      Caption = 'Descri'#231#227'o'
+    end
+    object cod_sec: TEdit
+      Left = 8
+      Top = 24
+      Width = 57
+      Height = 21
+      Alignment = taRightJustify
+      Color = clYellow
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clNavy
+      Font.Height = -11
+      Font.Name = 'Segoe UI'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 0
+      OnKeyPress = cod_secKeyPress
+    end
+    object EdtNome: TEdit
+      Left = 8
+      Top = 64
+      Width = 345
+      Height = 21
+      CharCase = ecUpperCase
+      Color = clSilver
+      MaxLength = 50
+      TabOrder = 1
+    end
+    object GroupBox6: TGroupBox
+      Left = 8
+      Top = 96
+      Width = 353
+      Height = 209
+      Caption = 'Foto'
+      TabOrder = 2
+      object BtnLimpa: TBitBtn
+        Left = 256
+        Top = 104
+        Width = 75
+        Height = 25
+        Caption = '&Limpa'
+        Glyph.Data = {
+          36030000424D3603000000000000360000002800000010000000100000000100
+          18000000000000030000120B0000120B00000000000000000000FF00FFFF00FF
+          FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+          FFFF00FF0732DE0732DEFF00FF0732DE0732DEFF00FFFF00FFFF00FFFF00FFFF
+          00FFFF00FFFF00FFFF00FFFF00FFFF00FF0732DE0732DEFF00FFFF00FF0732DE
+          0732DE0732DEFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF0732
+          DE0732DEFF00FFFF00FFFF00FF0732DE0732DD0732DE0732DEFF00FFFF00FFFF
+          00FFFF00FFFF00FFFF00FF0732DE0732DEFF00FFFF00FFFF00FFFF00FFFF00FF
+          0534ED0732DF0732DE0732DEFF00FFFF00FFFF00FFFF00FF0732DE0732DEFF00
+          FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF0732DE0732DE0732DDFF
+          00FF0732DD0732DE0732DEFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+          FF00FFFF00FFFF00FF0732DD0633E60633E60633E90732DCFF00FFFF00FFFF00
+          FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF0633E307
+          32E30534EFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+          FF00FFFF00FFFF00FF0732DD0534ED0533E90434EF0434F5FF00FFFF00FFFF00
+          FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF0434F40534EF0533EBFF
+          00FFFF00FF0434F40335F8FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+          FF00FF0335FC0534EF0434F8FF00FFFF00FFFF00FFFF00FF0335FC0335FBFF00
+          FFFF00FFFF00FFFF00FFFF00FFFF00FF0335FB0335FB0335FCFF00FFFF00FFFF
+          00FFFF00FFFF00FFFF00FF0335FB0335FBFF00FFFF00FFFF00FFFF00FF0335FB
+          0335FB0335FBFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+          FF0335FBFF00FFFF00FF0335FB0335FB0335FBFF00FFFF00FFFF00FFFF00FFFF
+          00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF0335FB0335FB
+          FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+          FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+          00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF}
+        TabOrder = 0
+        OnClick = BtnLimpaClick
+      end
+      object Panel3: TPanel
+        Left = 8
+        Top = 16
+        Width = 225
+        Height = 185
+        BevelOuter = bvNone
+        BevelWidth = 4
+        TabOrder = 1
+        object Image: TImage
+          Left = 0
+          Top = 0
+          Width = 225
+          Height = 185
+          Align = alClient
+          Stretch = True
+          ExplicitLeft = 4
+          ExplicitTop = 4
+          ExplicitWidth = 217
+          ExplicitHeight = 177
+        end
+      end
+      object BtnFoto: TBitBtn
+        Left = 256
+        Top = 64
+        Width = 75
+        Height = 25
+        Caption = '&Foto'
+        Glyph.Data = {
+          36030000424D3603000000000000360000002800000010000000100000000100
+          18000000000000030000120B0000120B00000000000000000000FF00FFFF00FF
+          FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+          FFFF00FFFF00FFFF00FFFF00FF29ABD735B3DC23A9D7FF00FFFF00FFFF00FFFF
+          00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF29ABD7
+          AFF6FC86EFFA49C2E449C2E449C2E434B4DD24AAD7FF00FFFF00FFFF00FFFF00
+          FFFF00FFFF00FFFF00FFFF00FF29ABD7A6E9F59EFFFF97FCFF99FBFF95F7FF8D
+          F2FE83EAFA49C2E449C2E43AB8DFFF00FFFF00FFFF00FFFF00FFFF00FF29ABD7
+          8BD7ECABFEFF90F8FF91F6FF90F5FF8FF5FF8FF4FF90F4FF95F6FF75DDF52DAF
+          DBFF00FFFF00FFFF00FFFF00FF29ABD729ABD7AAF0FA91FAFF91F6FF90F5FF8E
+          F4FF8DF2FE8BF1FE8CF1FF77DFF656CAEAFF00FFFF00FFFF00FFFF00FF29ABD7
+          7BE5F429ABD79EFEFF8DF7FF8EF6FF8CF4FF8DF2FE8BF1FE8CF1FF72DDF50571
+          0A2CB0DAFF00FFFF00FFFF00FF29ABD793F9FD29ABD7A8E9F5A8F0FAA4F1FBA1
+          F7FF8CF3FF8AF1FE05710A1A8E2B0EA31B05710AFF00FFFF00FFFF00FF29ABD7
+          9DFEFF86F2FB29ABD729ABD729ABD729ABD7AFF2FB0C84140EA31B0EA31B0EA3
+          1B2DB0471FA8D6FF00FFFF00FF29ABD79AFCFF96FBFF95FBFF95FAFF90F7FF6C
+          DEF3087E100C84140975130EA31B0EA31B0EA31B148D23FF00FFFF00FF29ABD7
+          9BFDFF94FAFF92F8FF91F6FF92F7FF93F9FF84EFFD29ABD709751324B53B0571
+          0A05710A05710AFF00FFFF00FF29ABD7A4FFFF94FCFF92F9FF93F8FF8FEDFA90
+          ECFA95EEFC96F1FD087E1042CE6705710A08831005710AFF00FFFF00FF25A8D6
+          29ABD79EF5FB9FF7FD05710A2BAED925A8D628ABD7087E1058E08758E0870571
+          0AFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF29ABD730AED92CADD805710A58
+          E08758E08758E08705710A05710A08810FFF00FFFF00FFFF00FFFF00FFFF00FF
+          FF00FFFF00FFFF00FFFF00FFFF00FF05710A05710A05710A087E10067A0DFF00
+          FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+          00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF}
+        TabOrder = 2
+        OnClick = BtnFotoClick
+      end
+    end
+    object CheckBebidas: TCheckBox
+      Left = 8
+      Top = 312
+      Width = 353
+      Height = 17
+      Caption = 'Bebidas Alco'#243'licas / Fumo'
+      TabOrder = 3
+    end
+  end
+  inherited Panel2: TPanel
+    Width = 368
+    ExplicitWidth = 368
+    inherited ToolBar1: TToolBar
+      Width = 368
+      Height = 104
+      ExplicitWidth = 368
+      ExplicitHeight = 104
+      inherited BtnAlterar: TToolButton
+        Wrap = True
+        OnClick = BtnAlterarClick
+      end
+      inherited BtnExcluir: TToolButton
+        Left = 0
+        Top = 52
+        ExplicitLeft = 0
+        ExplicitTop = 52
+      end
+      inherited ToolButton6: TToolButton
+        Left = 81
+        Top = 52
+        ExplicitLeft = 81
+        ExplicitTop = 52
+      end
+      inherited BtnConsultar: TToolButton
+        Left = 89
+        Top = 52
+        OnClick = BtnConsultarClick
+        ExplicitLeft = 89
+        ExplicitTop = 52
+      end
+      inherited BtnSair: TToolButton
+        Left = 170
+        Top = 52
+        ExplicitLeft = 170
+        ExplicitTop = 52
+      end
+    end
+  end
+  inherited SB: TdxStatusBar
+    Top = 392
+    Width = 368
+    ExplicitTop = 392
+    ExplicitWidth = 368
+  end
+  inherited BarraMenu: TcxImageList
+    FormatVersion = 1
+  end
+  object IBSQLSec: TFDQuery
+    Connection = DM.IBDatabase
+    Transaction = IBTRSec
+    Left = 216
+    Top = 48
+  end
+  object IBTRSec: TFDTransaction
+    Connection = DM.IBDatabase
+    Left = 280
+    Top = 48
+  end
+  object OpenPicture: TOpenPictureDialog
+    Left = 392
+    Top = 136
+  end
+end

@@ -1,0 +1,98 @@
+-- 20/04 17:29:18:968 
+--------------------------------------------------------------------------------
+ATIVAR - 20/04/18 17:29:18:968 - Modelo: NaoFiscal - Porta: arquivo.txt - TimeOut: 3
+         Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE=RTS/CTS HARDFLOW MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 20/04 17:29:19:102   estRequerZ
+-- 20/04 17:29:29:310   estRequerZ
+-- 20/04 17:29:29:456   estRequerZ
+-- 20/04 17:29:48:467   estRequerZ
+-- 20/04 17:29:48:474   estRequerZ
+-- 20/04 17:29:48:487   estRequerZ
+-- 20/04 17:29:48:491   estRequerZ
+-- 20/04 17:29:48:793   estLivre
+-- 20/04 17:30:24:171 
+--------------------------------------------------------------------------------
+ATIVAR - 20/04/18 17:30:24:171 - Modelo: NaoFiscal - Porta: arquivo.txt - TimeOut: 3
+         Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE=RTS/CTS HARDFLOW MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 20/04 17:30:24:291   estLivre
+-- 20/04 17:30:27:152   estLivre
+-- 20/04 17:30:27:256   estLivre
+-- 20/04 17:30:42:414   estLivre
+-- 20/04 17:47:18:344 
+--------------------------------------------------------------------------------
+ATIVAR - 20/04/18 17:47:18:344 - Modelo: NaoFiscal - Porta: arquivo.txt - TimeOut: 3
+         Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE=RTS/CTS HARDFLOW MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 20/04 17:47:18:471   estLivre
+-- 20/04 17:47:22:088   estLivre
+-- 20/04 17:47:22:280   estLivre
+-- 20/04 17:47:23:571   estLivre
+-- 20/04 17:49:31:470 
+--------------------------------------------------------------------------------
+ATIVAR - 20/04/18 17:49:31:470 - Modelo: NaoFiscal - Porta: arquivo.txt - TimeOut: 3
+         Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE=RTS/CTS HARDFLOW MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 20/04 17:49:31:589   estLivre
+-- 20/04 17:49:34:468   estLivre
+-- 20/04 17:49:34:632   estLivre
+-- 20/04 17:49:35:948   estLivre
+-- 20/04 18:08:14:336 
+--------------------------------------------------------------------------------
+ATIVAR - 20/04/18 18:08:14:336 - Modelo: NaoFiscal - Porta: arquivo.txt - TimeOut: 3
+         Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE=RTS/CTS HARDFLOW MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 20/04 18:08:14:632   estLivre
+-- 20/04 18:08:20:195   estLivre
+-- 20/04 18:08:20:461   estLivre
+-- 20/04 18:08:21:414   estLivre
+-- 21/04 14:51:39:576 
+--------------------------------------------------------------------------------
+ATIVAR - 21/04/18 14:51:39:576 - Modelo: NaoFiscal - Porta: arquivo.txt - TimeOut: 3
+         Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE=RTS/CTS HARDFLOW MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 21/04 14:51:40:443   estRequerZ
+-- 21/04 14:51:43:701   estRequerZ
+-- 21/04 14:51:43:937   estRequerZ
+-- 21/04 15:00:45:320 
+--------------------------------------------------------------------------------
+ATIVAR - 21/04/18 15:00:45:320 - Modelo: NaoFiscal - Porta: arquivo.txt - TimeOut: 3
+         Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE=RTS/CTS HARDFLOW MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 21/04 15:00:45:434   estRequerZ
+-- 21/04 15:00:49:878   estRequerZ
+-- 21/04 15:00:50:012   estRequerZ
+-- 21/04 15:00:59:553   estRequerZ
+-- 21/04 15:00:59:561   estRequerZ
+-- 21/04 15:00:59:566   estRequerZ
+-- 21/04 15:00:59:600   estRequerZ
+-- 21/04 15:00:59:821   estLivre
+-- 21/04 15:01:11:074   estLivre
+-- 21/04 15:01:23:593 
+--------------------------------------------------------------------------------
+ATIVAR - 21/04/18 15:01:23:593 - Modelo: NaoFiscal - Porta: arquivo.txt - TimeOut: 3
+         Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE=RTS/CTS HARDFLOW MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 21/04 15:01:23:709   estLivre
+-- 21/04 15:01:26:624   estLivre
+-- 21/04 15:01:26:699   estLivre
+-- 21/04 15:01:26:710   estLivre
+-- 21/04 15:02:55:083 
+--------------------------------------------------------------------------------
+ATIVAR - 21/04/18 15:02:55:083 - Modelo: NaoFiscal - Porta: arquivo.txt - TimeOut: 3
+         Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE=RTS/CTS HARDFLOW MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 21/04 15:02:55:210   estLivre
+-- 21/04 15:03:03:939   estLivre
+-- 21/04 15:03:04:116   estLivre
+-- 21/04 15:03:04:125   estLivre

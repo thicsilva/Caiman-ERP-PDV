@@ -1,0 +1,1163 @@
+object frmFechaCaixa: TfrmFechaCaixa
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Fechamento de Caixa'
+  ClientHeight = 528
+  ClientWidth = 769
+  Color = clWhite
+  DoubleBuffered = True
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  KeyPreview = True
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyPress = FormKeyPress
+  PixelsPerInch = 96
+  TextHeight = 15
+  object Shape2: TShape
+    AlignWithMargins = True
+    Left = 20
+    Top = 88
+    Width = 729
+    Height = 3
+    Margins.Left = 20
+    Margins.Right = 20
+    Align = alTop
+    Brush.Color = 4044800
+    Pen.Style = psClear
+    ExplicitLeft = 0
+    ExplicitTop = 67
+    ExplicitWidth = 538
+  end
+  object shp1: TShape
+    AlignWithMargins = True
+    Left = 20
+    Top = 54
+    Width = 729
+    Height = 3
+    Margins.Left = 20
+    Margins.Right = 20
+    Align = alTop
+    Brush.Color = 4044800
+    Pen.Style = psClear
+    ExplicitLeft = -426
+    ExplicitTop = 57
+    ExplicitWidth = 884
+  end
+  object Shape1: TShape
+    AlignWithMargins = True
+    Left = 20
+    Top = 169
+    Width = 729
+    Height = 3
+    Margins.Left = 20
+    Margins.Right = 20
+    Align = alTop
+    Brush.Color = 4044800
+    Pen.Style = psClear
+    ExplicitLeft = 52
+    ExplicitTop = 238
+    ExplicitWidth = 495
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 769
+    Height = 27
+    Align = alTop
+    BevelOuter = bvNone
+    Color = clWhite
+    ParentBackground = False
+    TabOrder = 0
+    object cxLabel1: TcxLabel
+      AlignWithMargins = True
+      Left = 3
+      Top = 3
+      Align = alLeft
+      AutoSize = False
+      Caption = 'Caixa :'
+      ParentFont = False
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = 4044800
+      Style.Font.Height = -16
+      Style.Font.Name = 'Segoe UI'
+      Style.Font.Style = [fsBold]
+      Style.TextColor = 4044800
+      Style.IsFontAssigned = True
+      Properties.Alignment.Horz = taRightJustify
+      Properties.Alignment.Vert = taVCenter
+      Transparent = True
+      Height = 21
+      Width = 158
+      AnchorX = 161
+      AnchorY = 14
+    end
+    object lblCaixa: TcxLabel
+      AlignWithMargins = True
+      Left = 167
+      Top = 3
+      Align = alLeft
+      AutoSize = False
+      Caption = '1 - Geral'
+      ParentFont = False
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clWindowText
+      Style.Font.Height = -16
+      Style.Font.Name = 'Segoe UI'
+      Style.Font.Style = []
+      Style.IsFontAssigned = True
+      Properties.Alignment.Horz = taLeftJustify
+      Properties.Alignment.Vert = taVCenter
+      Transparent = True
+      Height = 21
+      Width = 234
+      AnchorY = 14
+    end
+    object cxLabel11: TcxLabel
+      AlignWithMargins = True
+      Left = 407
+      Top = 3
+      Align = alLeft
+      AutoSize = False
+      Caption = 'Abertura :'
+      ParentFont = False
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = 4044800
+      Style.Font.Height = -16
+      Style.Font.Name = 'Segoe UI'
+      Style.Font.Style = [fsBold]
+      Style.TextColor = 4044800
+      Style.IsFontAssigned = True
+      Properties.Alignment.Horz = taRightJustify
+      Properties.Alignment.Vert = taVCenter
+      Transparent = True
+      Height = 21
+      Width = 90
+      AnchorX = 497
+      AnchorY = 14
+    end
+    object lblAbre: TcxLabel
+      AlignWithMargins = True
+      Left = 503
+      Top = 3
+      Align = alLeft
+      AutoSize = False
+      Caption = '1 - Geral'
+      ParentFont = False
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clWindowText
+      Style.Font.Height = -16
+      Style.Font.Name = 'Segoe UI'
+      Style.Font.Style = []
+      Style.IsFontAssigned = True
+      Properties.Alignment.Horz = taLeftJustify
+      Properties.Alignment.Vert = taVCenter
+      Transparent = True
+      Height = 21
+      Width = 234
+      AnchorY = 14
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 27
+    Width = 769
+    Height = 24
+    Align = alTop
+    BevelOuter = bvNone
+    Color = clWhite
+    ParentBackground = False
+    TabOrder = 1
+    object cxLabel2: TcxLabel
+      AlignWithMargins = True
+      Left = 3
+      Top = 3
+      Align = alLeft
+      AutoSize = False
+      Caption = 'Usu'#225'rio :'
+      ParentFont = False
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = 4044800
+      Style.Font.Height = -16
+      Style.Font.Name = 'Segoe UI'
+      Style.Font.Style = [fsBold]
+      Style.TextColor = 4044800
+      Style.IsFontAssigned = True
+      Properties.Alignment.Horz = taRightJustify
+      Properties.Alignment.Vert = taVCenter
+      Transparent = True
+      Height = 18
+      Width = 158
+      AnchorX = 161
+      AnchorY = 12
+    end
+    object lblUsuario: TcxLabel
+      AlignWithMargins = True
+      Left = 167
+      Top = 3
+      Align = alLeft
+      AutoSize = False
+      Caption = '1 - Geral'
+      ParentFont = False
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clWindowText
+      Style.Font.Height = -16
+      Style.Font.Name = 'Segoe UI'
+      Style.Font.Style = []
+      Style.IsFontAssigned = True
+      Properties.Alignment.Horz = taLeftJustify
+      Properties.Alignment.Vert = taVCenter
+      Transparent = True
+      Height = 18
+      Width = 346
+      AnchorY = 12
+    end
+  end
+  object Panel4: TPanel
+    Left = 0
+    Top = 60
+    Width = 769
+    Height = 25
+    Align = alTop
+    BevelOuter = bvNone
+    Color = clWhite
+    ParentBackground = False
+    TabOrder = 2
+    object cxLabel6: TcxLabel
+      AlignWithMargins = True
+      Left = 3
+      Top = 3
+      Align = alClient
+      AutoSize = False
+      Caption = 'Per'#237'odo'
+      ParentFont = False
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clBlack
+      Style.Font.Height = -16
+      Style.Font.Name = 'Segoe UI'
+      Style.Font.Style = []
+      Style.TextColor = clBlack
+      Style.IsFontAssigned = True
+      Properties.Alignment.Horz = taCenter
+      Properties.Alignment.Vert = taVCenter
+      Transparent = True
+      Height = 19
+      Width = 763
+      AnchorX = 385
+      AnchorY = 13
+    end
+  end
+  object pnlPeriodo: TPanel
+    Left = 0
+    Top = 94
+    Width = 769
+    Height = 72
+    Align = alTop
+    BevelOuter = bvNone
+    Color = clWhite
+    ParentBackground = False
+    TabOrder = 3
+    object Panel5: TPanel
+      Left = 0
+      Top = 0
+      Width = 769
+      Height = 36
+      Align = alTop
+      BevelOuter = bvNone
+      Color = clWhite
+      ParentBackground = False
+      TabOrder = 0
+      object cxLabel4: TcxLabel
+        AlignWithMargins = True
+        Left = 3
+        Top = 3
+        Align = alLeft
+        AutoSize = False
+        Caption = 'Data Inicial :'
+        ParentFont = False
+        Style.Font.Charset = DEFAULT_CHARSET
+        Style.Font.Color = 4044800
+        Style.Font.Height = -16
+        Style.Font.Name = 'Segoe UI'
+        Style.Font.Style = [fsBold]
+        Style.TextColor = 4044800
+        Style.IsFontAssigned = True
+        Properties.Alignment.Horz = taRightJustify
+        Properties.Alignment.Vert = taVCenter
+        Transparent = True
+        Height = 30
+        Width = 158
+        AnchorX = 161
+        AnchorY = 18
+      end
+      object edtDateIni: TcxDateEdit
+        AlignWithMargins = True
+        Left = 167
+        Top = 3
+        Align = alLeft
+        ParentFont = False
+        Properties.Kind = ckDateTime
+        Style.Font.Charset = DEFAULT_CHARSET
+        Style.Font.Color = clWindowText
+        Style.Font.Height = -16
+        Style.Font.Name = 'Segoe UI'
+        Style.Font.Style = []
+        Style.IsFontAssigned = True
+        TabOrder = 1
+        Width = 330
+      end
+    end
+    object Panel6: TPanel
+      Left = 0
+      Top = 36
+      Width = 769
+      Height = 36
+      Align = alTop
+      BevelOuter = bvNone
+      Color = clWhite
+      ParentBackground = False
+      TabOrder = 1
+      object cxLabel5: TcxLabel
+        AlignWithMargins = True
+        Left = 3
+        Top = 3
+        Align = alLeft
+        AutoSize = False
+        Caption = 'Data Final :'
+        ParentFont = False
+        Style.Font.Charset = DEFAULT_CHARSET
+        Style.Font.Color = 4044800
+        Style.Font.Height = -16
+        Style.Font.Name = 'Segoe UI'
+        Style.Font.Style = [fsBold]
+        Style.TextColor = 4044800
+        Style.IsFontAssigned = True
+        Properties.Alignment.Horz = taRightJustify
+        Properties.Alignment.Vert = taVCenter
+        Transparent = True
+        Height = 30
+        Width = 158
+        AnchorX = 161
+        AnchorY = 18
+      end
+      object edtDateFim: TcxDateEdit
+        AlignWithMargins = True
+        Left = 167
+        Top = 3
+        Align = alLeft
+        ParentFont = False
+        Properties.Kind = ckDateTime
+        Style.Font.Charset = DEFAULT_CHARSET
+        Style.Font.Color = clWindowText
+        Style.Font.Height = -16
+        Style.Font.Name = 'Segoe UI'
+        Style.Font.Style = []
+        Style.IsFontAssigned = True
+        TabOrder = 1
+        Width = 330
+      end
+    end
+  end
+  object cxGridFormas: TcxGrid
+    AlignWithMargins = True
+    Left = 20
+    Top = 178
+    Width = 729
+    Height = 170
+    Margins.Left = 20
+    Margins.Right = 20
+    Margins.Bottom = 10
+    Align = alClient
+    TabOrder = 4
+    OnEnter = cxGridFormasEnter
+    OnExit = cxGridFormasExit
+    object cxGridFormasDBTableView1: TcxGridDBTableView
+      Navigator.Buttons.CustomButtons = <>
+      DataController.DataSource = dsFormas
+      DataController.Summary.DefaultGroupSummaryItems = <>
+      DataController.Summary.FooterSummaryItems = <>
+      DataController.Summary.SummaryGroups = <>
+      OptionsData.CancelOnExit = False
+      OptionsData.Deleting = False
+      OptionsData.DeletingConfirmation = False
+      OptionsData.Inserting = False
+      OptionsView.ColumnAutoWidth = True
+      OptionsView.GroupByBox = False
+      Styles.Content = cxstylPadrao
+      Styles.ContentOdd = cxstylOdd
+      Styles.Inactive = cxstylInactive
+      Styles.Footer = cxstylHeaderBold
+      Styles.Header = cxstylHeader
+      object cxGridFormasDBTableView1DESCRICAO: TcxGridDBColumn
+        Caption = 'Forma de Pagamento'
+        DataBinding.FieldName = 'descricao'
+        Options.Editing = False
+        Options.Focusing = False
+        Width = 150
+      end
+      object cxGridFormasDBTableView1TOTAL: TcxGridDBColumn
+        Caption = 'Total'
+        DataBinding.FieldName = 'valor_calc'
+        PropertiesClassName = 'TcxLabelProperties'
+        Properties.Alignment.Horz = taRightJustify
+        HeaderGlyphAlignmentHorz = taRightJustify
+        Options.Editing = False
+        Options.Focusing = False
+      end
+      object cxGridFormasDBTableView1valor_confere: TcxGridDBColumn
+        Caption = 'Confer'#234'ncia'
+        DataBinding.FieldName = 'valor_confere'
+        PropertiesClassName = 'TcxCalcEditProperties'
+        Properties.ImmediateDropDownWhenKeyPressed = True
+        Properties.ImmediatePost = True
+      end
+      object cxGridFormasDBTableView1valor_dif: TcxGridDBColumn
+        Caption = 'Diferen'#231'a'
+        DataBinding.FieldName = 'valor_dif'
+        Options.Editing = False
+        Options.Focusing = False
+      end
+    end
+    object cxGridFormasLevel1: TcxGridLevel
+      GridView = cxGridFormasDBTableView1
+    end
+  end
+  object Panel9: TPanel
+    AlignWithMargins = True
+    Left = 3
+    Top = 488
+    Width = 763
+    Height = 37
+    Margins.Top = 10
+    Align = alBottom
+    BevelOuter = bvNone
+    TabOrder = 5
+    object btnCancelar: TcxButton
+      AlignWithMargins = True
+      Left = 451
+      Top = 3
+      Width = 146
+      Height = 31
+      Align = alRight
+      Caption = 'Cancelar'
+      OptionsImage.Glyph.Data = {
+        36100000424D3610000000000000360000002800000020000000200000000100
+        2000000000000010000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000001010000000000000101000001010000
+        0000000001010000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000000101060615151B1B5C5C2B2B93943535B7B83A3ACCCC3A3ACCCC3535
+        B7B82B2B93941B1B5C5C06061515000001010000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000F0F
+        31313131AAAA4747F8F94949FDFE4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FDFE4747F8F93131AAAA0F0F313100000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000004040C0C2C2C96974848
+        FBFC4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF4949FFFF4949FFFF4848FBFC2C2C969704040C0C0000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000A0A21213D3DD3D44949FFFF4949
+        FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF3D3DD3D40A0A
+        2121000000000000000000000000000000000000000000000000000000000000
+        00000000000000000000000000000A0A21214141E0E14949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4141
+        E0E10A0A21210000000000000000000000000000000000000000000000000000
+        0000000000000000000004040C0C3D3DD3D44949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF3D3DD3D404040C0C00000000000000000000000000000000000000000000
+        000000000000000001012C2C96974949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF2C2C969700000101000000000000000000000000000000000000
+        0000000000000F0F32324747FBFC4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4747FBFC0F0F3232000000000000000000000000000000000000
+        0000000001013131AAAA4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4545F0F0262683844646F3F44949FFFF4949FFFF4949FFFF4949
+        FFFF4646F3F4262683844545F0F14949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF3131AAAA000001010000000000000000000000000000
+        0000060614144747F8F94949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4747F6F712123F3F00000101151546464747F6F74949FFFF4949FFFF4747
+        F6F71414464600000101131340404747F6F74949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF4747F8F9060614140000000000000000000000000000
+        00001B1B5C5C4949FDFE4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF3E3ED4D5010104040000000000000000181851514848F9FA4848F9FA1818
+        50500000000000000000010104043E3ED6D74949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF4949FDFE1B1B5C5C0000000000000000000000000000
+        01012B2B93944949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF2D2D999A0000010100000000000000001C1C60601C1C5F5F0000
+        000000000000000001012E2E9B9C4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF4949FFFF2B2B93940000010100000000000000000000
+        00003535B7B84949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF2929898A000001010000000000000000000000000000
+        00000000010129298B8C4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF4949FFFF3535B7B80000000000000000000000000000
+        01013A3ACCCC4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF4949FDFE24247D7D0000000000000000000000000000
+        000025257F7F4949FDFE4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF4949FFFF3A3ACCCC0000010100000000000000000000
+        01013A3ACCCC4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF4949FFFF282888890000000000000000000000000000
+        000029298B8C4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF4949FFFF3A3ACCCC0000010100000000000000000000
+        00003535B7B84949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF2C2C9899000001010000000000000000000000000000
+        0000000001012D2D9A9B4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF4949FFFF3535B7B80000000000000000000000000000
+        01012B2B93944949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF3030A8A90101040400000000000000001818515117174F4F0000
+        000000000000010104043131AAAB4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF4949FFFF2B2B93940000010100000000000000000000
+        00001B1B5C5C4949FDFE4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF3D3DD8D9020207070000000000000000151546464747F6F74747F6F71414
+        45450000000000000000020207073E3ED9DA4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF4949FDFE1B1B5C5C0000000000000000000000000000
+        0000060614144747F8F94949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4646F2F30F0F32320000000011113C3C4646F3F44949FFFF4949FFFF4646
+        F2F311113A3A000000000F0F34344646F3F44949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF4747F8F9060614140000000000000000000000000000
+        0000000001013131AAAA4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4242E7E8222274744444EDEE4949FFFF4949FFFF4949FFFF4949
+        FFFF4444ECED222273734444E9EA4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF3131AAAA000001010000000000000000000000000000
+        0000000000000F0F32324747FBFC4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF4949FDFE4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FDFE4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4747FBFC0F0F3232000000000000000000000000000000000000
+        000000000000000001012C2C96974949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF2C2C969700000101000000000000000000000000000000000000
+        0000000000000000000004040C0C3E3ED3D44949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF3E3ED3D404040C0C00000000000000000000000000000000000000000000
+        00000000000000000000000000000A0A21214141E0E14949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4141
+        E0E10A0A21210000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000A0A21213D3DD3D44949FFFF4949
+        FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF3D3DD3D40A0A
+        2121000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000004040C0C2C2C96974848
+        FBFC4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FFFF4949FFFF4949FFFF4848FBFC2C2C969704040C0C0000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000F0F
+        31313131AAAA4747F8F94949FDFE4949FFFF4949FFFF4949FFFF4949FFFF4949
+        FFFF4949FFFF4949FDFE4747F8F93131AAAA0F0F313100000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000000101060615151B1B5C5C2B2B93943535B7B83A3ACCCC3A3ACCCC3535
+        B7B82B2B93941B1B5C5C06061515000001010000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000001010000000000000101000001010000
+        0000000001010000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000}
+      SpeedButtonOptions.CanBeFocused = False
+      SpeedButtonOptions.Flat = True
+      SpeedButtonOptions.Transparent = True
+      TabOrder = 0
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+      OnClick = btnCancelarClick
+    end
+    object btnConfirmar: TcxButton
+      AlignWithMargins = True
+      Left = 603
+      Top = 3
+      Width = 157
+      Height = 31
+      Align = alRight
+      Caption = 'Fechar Caixa'
+      OptionsImage.Glyph.Data = {
+        36100000424D3610000000000000360000002800000020000000200000000100
+        2000000000000010000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000E1F0E2E25502375347432A9408B3DCB449742DD449742DD408B
+        3DCB347432A9255023750E1F0E2D000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000010301041E43
+        1D61428F3FD250AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF428F3ED21E421D6101030104000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000000000000000000000000000000000000000001227113942913ED450AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF41913FD3122611380000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000000000000000000000000000000000244E22724FAC4BFB50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF4FAB4BFB234D
+        2170000000000000000000000000000000000000000000000000000000000000
+        00000000000000000000000000002B5D298950AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF2A5D28870000000000000000000000000000000000000000000000000000
+        00000000000000000000244F227250AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF234D217000000000000000000000000000000000000000000000
+        0000000000001228113A4FAB4BFB50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF4FAB4BFB12261138000000000000000000000000000000000000
+        00000103010543913FD550AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF41913FD3010301040000000000000000000000000000
+        00001F441D6350AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF74DB94FF65CA77FF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF1E421D610000000000000000000000000000
+        000041913FD350AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF75DD95FF90FFCCFF8FFECAFF65CA77FF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF428F3ED20000000000000000000000000F21
+        0E3050AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF75DD95FF90FFCCFF90FFCCFF90FFCCFF8FFECAFF65CA77FF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF0E1F0D2D00000000000000002551
+        237750AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF75DD95FF90FFCCFF90FFCCFF90FFCCFF90FFCCFF90FFCCFF8FFECAFF65CA
+        77FF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF2550237500000000000000003575
+        33AB50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF75DD
+        95FF90FFCCFF90FFCCFF90FFCBFF6BD081FF79E29EFF90FFCCFF90FFCCFF8FFE
+        CAFF65CA77FF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF347432A90000000000000000408D
+        3CCD50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF75DD95FF90FF
+        CCFF90FFCCFF90FFCBFF6ACF7FFF50AF4CFF51B04EFF79E29EFF90FFCCFF90FF
+        CCFF8FFECAFF65CA77FF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF408B3DCB00000000000000004697
+        41DE50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF75DD96FF90FF
+        CCFF90FFCBFF6ACF7FFF50AF4CFF50AF4CFF50AF4CFF51B04EFF79E29EFF90FF
+        CCFF90FFCCFF8FFECAFF65CA77FF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF449742DD00000000000000004697
+        41DE50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4DFF75DD
+        96FF6ACF7FFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF51B04DFF79E2
+        9EFF90FFCCFF90FFCCFF8FFECAFF65CA77FF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF449742DD0000000000000000408D
+        3CCD50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF51B0
+        4DFF79E29EFF90FFCCFF90FFCCFF8FFECAFF65CA77FF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF408B3DCB00000000000000003575
+        33AB50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF51B04DFF79E29EFF90FFCCFF90FFCCFF8FFECAFF66CA77FF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF347432A900000000000000002552
+        247750AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF51B04DFF79E29EFF90FFCCFF90FFCCFF8FFECAFF66CA77FF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF2550237500000000000000000F21
+        0E3050AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF51B04DFF79E29EFF90FFCCFF90FFCCFF8FFECAFF5FC2
+        6AFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF0E1F0E2E00000000000000000000
+        000042913ED450AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF51B04DFF79E29EFF90FFCCFF7AE4A1FF51B0
+        4EFF50AF4CFF50AF4CFF50AF4CFF428F3FD20000000000000000000000000000
+        00001F441E6450AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF51B04DFF6AD081FF51B04EFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF1E431D610000000000000000000000000000
+        000002030105429340D650AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF42913ED4010301040000000000000000000000000000
+        0000000000001228113B4EAD4AFC50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF4FAC4BFB12271139000000000000000000000000000000000000
+        000000000000000000002450227450AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF244E227200000000000000000000000000000000000000000000
+        00000000000000000000000000002B5F298A50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF2B5D29890000000000000000000000000000000000000000000000000000
+        000000000000000000000000000000000000245022744EAD4AFC50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF4FAB4BFB244F
+        2272000000000000000000000000000000000000000000000000000000000000
+        000000000000000000000000000000000000000000001228113B429340D650AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF43913FD51228113A0000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000020301051F44
+        1E6442913ED450AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF41913FD31F441D6301030104000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000F210E3025522477357533AB408D3CCD469741DE469741DE408D
+        3CCD357533AB255123770F210E2F000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000}
+      SpeedButtonOptions.CanBeFocused = False
+      SpeedButtonOptions.Flat = True
+      SpeedButtonOptions.Transparent = True
+      TabOrder = 1
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+      OnClick = btnConfirmarClick
+    end
+  end
+  object pnlSaldoAnterior: TPanel
+    Left = 0
+    Top = 386
+    Width = 769
+    Height = 28
+    Align = alBottom
+    BevelOuter = bvNone
+    Color = clWhite
+    ParentBackground = False
+    TabOrder = 6
+    object cxLabel3: TcxLabel
+      AlignWithMargins = True
+      Left = 20
+      Top = 3
+      Margins.Left = 20
+      Align = alLeft
+      AutoSize = False
+      Caption = 'Saldo Inicial :'
+      ParentFont = False
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = 4044800
+      Style.Font.Height = -19
+      Style.Font.Name = 'Segoe UI'
+      Style.Font.Style = [fsBold]
+      Style.TextColor = 4044800
+      Style.IsFontAssigned = True
+      Properties.Alignment.Horz = taLeftJustify
+      Properties.Alignment.Vert = taVCenter
+      Transparent = True
+      Height = 22
+      Width = 158
+      AnchorY = 14
+    end
+    object edtTotInicial: TcxLabel
+      AlignWithMargins = True
+      Left = 184
+      Top = 3
+      Align = alLeft
+      AutoSize = False
+      Caption = '1 - Geral'
+      ParentFont = False
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clWindowText
+      Style.Font.Height = -19
+      Style.Font.Name = 'Segoe UI'
+      Style.Font.Style = []
+      Style.IsFontAssigned = True
+      Properties.Alignment.Horz = taRightJustify
+      Properties.Alignment.Vert = taVCenter
+      Transparent = True
+      Height = 22
+      Width = 565
+      AnchorX = 749
+      AnchorY = 14
+    end
+  end
+  object Panel3: TPanel
+    Left = 0
+    Top = 450
+    Width = 769
+    Height = 28
+    Align = alBottom
+    BevelOuter = bvNone
+    Color = clWhite
+    ParentBackground = False
+    TabOrder = 7
+    object cxLabel7: TcxLabel
+      AlignWithMargins = True
+      Left = 20
+      Top = 3
+      Margins.Left = 20
+      Align = alLeft
+      AutoSize = False
+      Caption = 'Saldo Final :'
+      ParentFont = False
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = 4044800
+      Style.Font.Height = -19
+      Style.Font.Name = 'Segoe UI'
+      Style.Font.Style = [fsBold]
+      Style.TextColor = 4044800
+      Style.IsFontAssigned = True
+      Properties.Alignment.Horz = taLeftJustify
+      Properties.Alignment.Vert = taVCenter
+      Transparent = True
+      Height = 22
+      Width = 158
+      AnchorY = 14
+    end
+    object edtTotFinal: TcxLabel
+      AlignWithMargins = True
+      Left = 184
+      Top = 3
+      Align = alLeft
+      AutoSize = False
+      Caption = '1 - Geral'
+      ParentFont = False
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clWindowText
+      Style.Font.Height = -19
+      Style.Font.Name = 'Segoe UI'
+      Style.Font.Style = []
+      Style.IsFontAssigned = True
+      Properties.Alignment.Horz = taRightJustify
+      Properties.Alignment.Vert = taVCenter
+      Transparent = True
+      Height = 22
+      Width = 565
+      AnchorX = 749
+      AnchorY = 14
+    end
+  end
+  object Panel7: TPanel
+    Left = 0
+    Top = 358
+    Width = 769
+    Height = 28
+    Align = alBottom
+    BevelOuter = bvNone
+    Color = clWhite
+    ParentBackground = False
+    TabOrder = 8
+    object cxLabel9: TcxLabel
+      AlignWithMargins = True
+      Left = 20
+      Top = 3
+      Margins.Left = 20
+      Align = alLeft
+      AutoSize = False
+      Caption = 'Saldo Formas :'
+      ParentFont = False
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = 4044800
+      Style.Font.Height = -19
+      Style.Font.Name = 'Segoe UI'
+      Style.Font.Style = [fsBold]
+      Style.TextColor = 4044800
+      Style.IsFontAssigned = True
+      Properties.Alignment.Horz = taLeftJustify
+      Properties.Alignment.Vert = taVCenter
+      Transparent = True
+      Height = 22
+      Width = 141
+      AnchorY = 14
+    end
+    object edtTotFormas: TcxLabel
+      AlignWithMargins = True
+      Left = 167
+      Top = 3
+      Align = alLeft
+      AutoSize = False
+      Caption = '1 - Geral'
+      ParentFont = False
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clWindowText
+      Style.Font.Height = -19
+      Style.Font.Name = 'Segoe UI'
+      Style.Font.Style = []
+      Style.IsFontAssigned = True
+      Properties.Alignment.Horz = taRightJustify
+      Properties.Alignment.Vert = taVCenter
+      Transparent = True
+      Height = 22
+      Width = 582
+      AnchorX = 749
+      AnchorY = 14
+    end
+  end
+  object Panel8: TPanel
+    Left = 0
+    Top = 414
+    Width = 769
+    Height = 36
+    Align = alBottom
+    BevelOuter = bvNone
+    Color = clWindow
+    ParentBackground = False
+    TabOrder = 9
+    object cxLabel8: TcxLabel
+      AlignWithMargins = True
+      Left = 20
+      Top = 3
+      Margins.Left = 20
+      Align = alLeft
+      AutoSize = False
+      Caption = 'Sangria :'
+      ParentFont = False
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = 4044800
+      Style.Font.Height = -19
+      Style.Font.Name = 'Segoe UI'
+      Style.Font.Style = [fsBold]
+      Style.TextColor = 4044800
+      Style.IsFontAssigned = True
+      Properties.Alignment.Horz = taLeftJustify
+      Properties.Alignment.Vert = taVCenter
+      Transparent = True
+      Height = 30
+      Width = 129
+      AnchorY = 18
+    end
+    object cxLabel10: TcxLabel
+      AlignWithMargins = True
+      Left = 725
+      Top = 2
+      Caption = '(-)'
+      ParentFont = False
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clWindowText
+      Style.Font.Height = -19
+      Style.Font.Name = 'Segoe UI'
+      Style.Font.Style = []
+      Style.IsFontAssigned = True
+      Properties.Alignment.Horz = taLeftJustify
+      Properties.Alignment.Vert = taVCenter
+      Transparent = True
+      AnchorY = 17
+    end
+    object edtSangria: TCurrencyEdit
+      AlignWithMargins = True
+      Left = 158
+      Top = 1
+      Width = 561
+      Height = 32
+      Margins.Left = 6
+      Margins.Top = 1
+      Align = alLeft
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 2
+      OnChange = edtSangriaChange
+      OnEnter = edtSangriaEnter
+      ExplicitHeight = 33
+    end
+  end
+  object QFormas: TFDQuery
+    Connection = DM.IBDatabase
+    Transaction = TRFechamento
+    SQL.Strings = (
+      'SELECT FP.codigo, FP.descricao, Sum('
+      'case'
+      
+        'when ( ( GR.tipo_dc = '#39'D'#39' ) AND ( MV.valor > 0 ) )  then ( MV.va' +
+        'lor * -1 )'
+      'else mv.valor end ) TOTAL,'
+      'SUM('
+      '(case when (( GR.op_saldo = '#39'S'#39') AND ( MV.cancelado <> 1 )) then'
+      '(case'
+      
+        'when ( ( GR.tipo_dc = '#39'D'#39' ) AND ( MV.valor > 0 ) )  then ( MV.va' +
+        'lor * -1 )'
+      'else mv.valor end ) else 0 end ) ) SALDO,'
+      'FP.tipo'
+      ''
+      'FROM newcaixa_movimentos MV'
+      'LEFT OUTER JOIN new_caixa_grupos GR'
+      'ON( GR.chave=MV.plano_contas AND GR.cod_emp=MV.cod_emp )'
+      'left OUTER JOIN formas_pagamento FP'
+      'ON( FP.codigo=MV.cod_forma )'
+      
+        'WHERE MV.cod_mov=:COD_MOV AND GR.op_hist_fecha = '#39'S'#39' and MV.cod_' +
+        'forma > 0'
+      'group by FP.codigo, FP.descricao, FP.tipo'
+      'order by FP.codigo, FP.descricao')
+    Left = 320
+    Top = 144
+    ParamData = <
+      item
+        Name = 'COD_MOV'
+        DataType = ftInteger
+        ParamType = ptInput
+        Value = Null
+      end>
+    object QFormasDESCRICAO: TStringField
+      FieldName = 'DESCRICAO'
+      Origin = 'DESCRICAO'
+    end
+    object QFormasTOTAL: TBCDField
+      FieldName = 'TOTAL'
+      Origin = 'TOTAL'
+      DisplayFormat = '(+) R$ ,0.00;(-) R$ ,0.00'
+      Precision = 18
+      Size = 2
+    end
+    object QFormasCODIGO: TIntegerField
+      FieldName = 'CODIGO'
+      Origin = 'CODIGO'
+    end
+    object QFormasSALDO: TBCDField
+      FieldName = 'SALDO'
+      Origin = 'SALDO'
+      Precision = 18
+      Size = 2
+    end
+    object QFormasTIPO: TStringField
+      FieldName = 'TIPO'
+      Origin = 'TIPO'
+      FixedChar = True
+      Size = 2
+    end
+  end
+  object TRFechamento: TFDTransaction
+    Connection = DM.IBDatabase
+    Left = 392
+    Top = 152
+  end
+  object dsFormas: TDataSource
+    DataSet = tempFormas
+    Left = 320
+    Top = 192
+  end
+  object cxStyleRepository1: TcxStyleRepository
+    Left = 8
+    Top = 8
+    PixelsPerInch = 96
+    object cxstylPadrao: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clWhite
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxstylOdd: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 15400927
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxstylHeader: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clWhite
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clGreen
+      Font.Height = -13
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      TextColor = clGreen
+    end
+    object cxstylHeaderBold: TcxStyle
+      AssignedValues = [svFont, svTextColor]
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Segoe UI'
+      Font.Style = [fsBold]
+      TextColor = clBlack
+    end
+    object cxstylInactive: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clWhite
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxstylVermelho: TcxStyle
+      AssignedValues = [svColor]
+      Color = 14145535
+    end
+  end
+  object tempFormas: TClientDataSet
+    Aggregates = <>
+    FieldDefs = <>
+    IndexDefs = <
+      item
+        Name = 'tempFormasIndex1'
+        Fields = 'codigo'
+        Options = [ixPrimary]
+      end>
+    IndexName = 'tempFormasIndex1'
+    Params = <>
+    StoreDefs = True
+    AfterPost = tempFormasAfterPost
+    OnCalcFields = tempFormasCalcFields
+    Left = 208
+    Top = 184
+    object tempFormascodigo: TIntegerField
+      FieldName = 'codigo'
+    end
+    object tempFormasdescricao: TStringField
+      FieldName = 'descricao'
+      Size = 100
+    end
+    object tempFormasvalor: TCurrencyField
+      FieldName = 'valor'
+      DisplayFormat = 'R$ ,0.00 (+);R$ ,0.00 (-)'
+    end
+    object tempFormasvalor_confere: TCurrencyField
+      FieldName = 'valor_confere'
+      OnChange = tempFormasvalor_confereChange
+      DisplayFormat = 'R$ ,0.00 (+);R$ ,0.00 (-)'
+    end
+    object tempFormasvalor_dif: TCurrencyField
+      FieldName = 'valor_dif'
+      DisplayFormat = 'R$ ,0.00 (+);R$ ,0.00 (-)'
+    end
+    object tempFormasvalor_saldo: TCurrencyField
+      FieldName = 'valor_saldo'
+    end
+    object tempFormasvalor_calc: TStringField
+      FieldKind = fkCalculated
+      FieldName = 'valor_calc'
+      Calculated = True
+    end
+  end
+end

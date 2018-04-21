@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.4.6" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Padrão" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="41421,4835007755" ReportOptions.Description.Text="" ReportOptions.LastChange="42757,4950846991" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;&#13;&#10;procedure MasterData1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;        if Trim(&#60;logo&#62;) &#60;&#62; '' then&#13;&#10;         begin&#13;&#10;           logo.Picture.LoadFromFile(&#60;logo&#62;);&#13;&#10;         end;&#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end." OnReportPrint="RelatorioOnReportPrint">
+  <Datasets>
+    <item DataSet="frxItensTroca" DataSetName="ITENSTROCA"/>
+  </Datasets>
+  <Variables>
+    <item Name=" Empresa"/>
+    <item Name="razao_emp"/>
+    <item Name="endereco_emp"/>
+    <item Name="numero_emp"/>
+    <item Name="cep_emp"/>
+    <item Name="cid_emp"/>
+    <item Name="estado_emp"/>
+    <item Name="tel_emp"/>
+    <item Name=" cliente"/>
+    <item Name="nome_cli"/>
+    <item Name="end_cli"/>
+    <item Name="numero_cli"/>
+    <item Name="cep_cli"/>
+    <item Name="cid_cli"/>
+    <item Name="estado_cli"/>
+    <item Name=" totalizacao"/>
+    <item Name="total_geral"/>
+    <item Name="desconto"/>
+    <item Name="valor_pagar"/>
+    <item Name="troco"/>
+    <item Name=" venda"/>
+    <item Name="obs"/>
+    <item Name="logo"/>
+    <item Name="data"/>
+    <item Name="os"/>
+    <item Name="fechamento"/>
+    <item Name="logo2"/>
+    <item Name="maoobra"/>
+    <item Name="APARELHO"/>
+    <item Name="MODELO"/>
+    <item Name="DEFEITO"/>
+    <item Name="SERIE"/>
+    <item Name="TERMOOS"/>
+  </Variables>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxDetailData Name="DetailData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="15,11812" Left="0" Top="215,43321" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxItensTroca" DataSetName="ITENSTROCA" RowCount="0">
+      <TfrxMemoView Name="ITENSCOD_PRO" Left="36,7953" Top="0" Width="68,03154" Height="15,11812" DataField="COD_PRO" DataSet="frxItensTroca" DataSetName="ITENSTROCA" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[ITENSTROCA.&#34;COD_PRO&#34;]"/>
+      <TfrxMemoView Name="Memo15" Left="404,40971" Top="0" Width="37,7953" Height="15,11812" DataField="ENTRADASAIDA" DataSet="frxItensTroca" DataSetName="ITENSTROCA" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[ITENSTROCA.&#34;ENTRADASAIDA&#34;]"/>
+      <TfrxMemoView Name="Memo16" Left="455,10266" Top="0" Width="60,47248" Height="15,11812" DataField="QUANTIDADE" DataSet="frxItensTroca" DataSetName="ITENSTROCA" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[ITENSTROCA.&#34;QUANTIDADE&#34;]"/>
+      <TfrxMemoView Name="Memo17" Left="523,35467" Top="0" Width="83,14966" Height="15,11812" DataField="VALOR" DataSet="frxItensTroca" DataSetName="ITENSTROCA" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[ITENSTROCA.&#34;VALOR&#34;]"/>
+      <TfrxMemoView Name="Memo18" Left="612,06339" Top="0" Width="94,48825" Height="15,11812" DataField="VALOR_TOTAL" DataSet="frxItensTroca" DataSetName="ITENSTROCA" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[ITENSTROCA.&#34;VALOR_TOTAL&#34;]"/>
+      <TfrxMemoView Name="Memo14" Left="117,16543" Top="0,118119999999976" Width="279,68522" Height="15,11812" DataField="NOME_PRO" DataSet="frxItensTroca" DataSetName="ITENSTROCA" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[ITENSTROCA.&#34;NOME_PRO&#34;]"/>
+    </TfrxDetailData>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="173,85838" Left="0" Top="18,89765" Width="718,1107" OnBeforePrint="MasterData1OnBeforePrint" ColumnWidth="0" ColumnGap="0" RowCount="1">
+      <TfrxPictureView Name="logo" Left="10,11812" Top="4,55906" Width="113,38582677" Height="113,38582677" HightQuality="False" Transparent="False" TransparentColor="16777215"/>
+      <TfrxMemoView Name="razao_emp" Left="136,06308" Top="3,77953" Width="563,14997" Height="26,45671" Font.Charset="1" Font.Color="0" Font.Height="-19" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[razao_emp]"/>
+      <TfrxMemoView Name="endereco_emp" Left="136,06308" Top="34,01577" Width="309,92146" Height="18,89765" Text="[endereco_emp]"/>
+      <TfrxMemoView Name="numero_emp" Left="468,66172" Top="34,01577" Width="109,60637" Height="18,89765" Text="[numero_emp]"/>
+      <TfrxMemoView Name="Memo1" Left="453,5436" Top="34,01577" Width="11,33859" Height="18,89765" Text="-"/>
+      <TfrxMemoView Name="cid_emp" Left="136,06308" Top="56,69295" Width="238,11039" Height="18,89765" Text="[cid_emp]"/>
+      <TfrxMemoView Name="Memo2" Left="381,73253" Top="56,69295" Width="11,33859" Height="18,89765" Text="/"/>
+      <TfrxMemoView Name="estado_emp" Left="396,85065" Top="56,69295" Width="79,37013" Height="18,89765" Text="[estado_emp]"/>
+      <TfrxMemoView Name="cep_emp" Left="136,06308" Top="79,37013" Width="79,37013" Height="18,89765" Text="[cep_emp]"/>
+      <TfrxMemoView Name="tel_emp" Left="136,06308" Top="102,04731" Width="79,37013" Height="18,89765" Text="[tel_emp]"/>
+      <TfrxShapeView Name="Shape1" Left="8,55906" Top="130,42517" Width="699,21305" Height="37,7953"/>
+      <TfrxMemoView Name="Memo8" Left="37,67718" Top="152,08658" Width="34,01577" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Cód"/>
+      <TfrxMemoView Name="Memo9" Left="118,16543" Top="152,86611" Width="105,82684" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Descrição"/>
+      <TfrxMemoView Name="Memo10" Left="405,40971" Top="152,86611" Width="34,01577" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="E / S"/>
+      <TfrxMemoView Name="Memo11" Left="456,76407" Top="152,86611" Width="52,91342" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Quant."/>
+      <TfrxMemoView Name="Memo12" Left="528,57514" Top="152,86611" Width="60,47248" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="V. Unid."/>
+      <TfrxMemoView Name="Memo13" Left="616,50433" Top="152,86611" Width="60,47248" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="V. Total"/>
+      <TfrxMemoView Name="Memo27" Left="302,3624" Top="133,2047" Width="105,82684" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="P R O D U T O S "/>
+      <TfrxLineView Name="Line4" Left="8,55906" Top="150,88188" Width="699,21305" Height="0" Color="0" Diagonal="True"/>
+    </TfrxMasterData>
+    <TfrxColumnFooter Name="ColumnFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="70,81107" Left="0" Top="291,02381" Width="718,1107">
+      <TfrxMemoView Name="Memo19" Left="6,45671" Top="46" Width="105,82684" Height="18,89765" Font.Charset="0" Font.Color="0" Font.Height="-16" Font.Name="Arial Narrow" Font.Style="1" ParentFont="False" Text="Total Dieferença"/>
+      <TfrxMemoView Name="Memo20" Left="536,69326" Top="45,10235" Width="166,29932" Height="18,89765" Font.Charset="0" Font.Color="0" Font.Height="-16" Font.Name="Arial Narrow" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[TOTAL_GERAL]"/>
+      <TfrxMemoView Name="Memo23" Left="3,77953" Top="27,67718" Width="158,74026" Height="15,11812" Font.Charset="0" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Total Saída"/>
+      <TfrxMemoView Name="Memo24" Left="542,86642" Top="27,89765" Width="158,74026" Height="15,11812" Font.Charset="0" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[totalsaida]"/>
+      <TfrxMemoView Name="Memo22" Left="544,25232" Top="7,55905999999999" Width="158,74026" Height="15,11812" Font.Charset="0" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[totalentrada]"/>
+      <TfrxMemoView Name="Memo21" Left="5,16543" Top="5,33858999999995" Width="158,74026" Height="15,11812" Font.Charset="0" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Total Entrada"/>
+      <TfrxLineView Name="Line3" Left="3,77953" Top="3,77952999999997" Width="699,21305" Height="0" Color="0" Diagonal="True"/>
+    </TfrxColumnFooter>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="34,89765" Left="0" Top="385,51206" Width="718,1107" OnBeforePrint="PageFooter1OnBeforePrint">
+      <TfrxMemoView Name="Memo29" Left="298,3624" Top="12,22047" Width="98,26778" Height="18,89765" DataSet="FrmFechaVenda.frxFormas" DataSetName="FORMAS" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="*** TROCA ***  "/>
+      <TfrxLineView Name="Line10" Left="9,33828" Top="9,33859000000001" Width="699,21305" Height="0" Color="0" Diagonal="True"/>
+    </TfrxPageFooter>
+  </TfrxReportPage>
+</TfrxReport>

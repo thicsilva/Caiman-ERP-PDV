@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="4.12.2" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Padrão" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="41541,4734086111" ReportOptions.Description.Text="" ReportOptions.LastChange="41541,5017130787" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end." PropData="044C65667403A00103546F700350010844617461736574730100095661726961626C657301010612204E616D653D22206461646F735F72656C220001060F204E616D653D22656D7072657361220001060D204E616D653D2276616C6F72220001060E204E616D653D226E756D65726F2200010610204E616D653D22726563656269646F220001060D204E616D653D226C6F63616C2200010614204E616D653D22646174615F657874656E736F2200010615204E616D653D2276616C6F725F657874656E736F220000055374796C650100">
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="215,9" PaperHeight="279,4" PaperSize="1" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" Height="366,61441" Left="0" Top="18,89765" Width="740,409927">
+      <TfrxShapeView Name="Shape1" Align="baClient" Left="0" Top="0" Width="740,409927" Height="366,61441" ShowHint="False"/>
+      <TfrxShapeView Name="Shape2" Left="0" Top="0" Width="740,78740157" Height="34,01577" ShowHint="False"/>
+      <TfrxMemoView Name="Memo1" Left="3,77953" Top="3,55906" Width="733,22882" Height="26,45671" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-19" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="[empresa]"/>
+      <TfrxMemoView Name="Memo2" Left="18,89765" Top="49,13389" Width="117,16543" Height="34,01577" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-27" Font.Name="Arial" Font.Style="3" ParentFont="False" Text="RECIBO"/>
+      <TfrxMemoView Name="Memo3" Left="241,88992" Top="56,69295" Width="34,01577" Height="26,45671" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-19" Font.Name="Arial" Font.Style="3" ParentFont="False" Text="N.º"/>
+      <TfrxShapeView Name="Shape3" Left="284,02381" Top="54,47248" Width="132,28355" Height="30,23624" ShowHint="False" Color="15000804" Shape="skRoundRectangle"/>
+      <TfrxMemoView Name="Memo4" Left="428,32313" Top="56,69295" Width="90,70872" Height="26,45671" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-19" Font.Name="Arial" Font.Style="3" ParentFont="False" Text="Valor R$ :"/>
+      <TfrxShapeView Name="Shape4" Left="523,91373" Top="53,91342" Width="207,87415" Height="30,23624" ShowHint="False" Color="15000804" Shape="skRoundRectangle"/>
+      <TfrxMemoView Name="Memo5" Left="289,14193" Top="60,47248" Width="120,94496" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-15" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[numero]"/>
+      <TfrxMemoView Name="Memo6" Left="529,1342" Top="60,47248" Width="200,31509" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-15" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[valor]"/>
+      <TfrxMemoView Name="Memo7" Left="18,89765" Top="102,3859" Width="143,62214" Height="22,67718" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Recebi (emos) de:"/>
+      <TfrxShapeView Name="Shape5" Left="18,89765" Top="124,72449" Width="710,55164" Height="30,23624" ShowHint="False" Color="15000804" Shape="skRoundRectangle"/>
+      <TfrxMemoView Name="Memo8" Left="24,01577" Top="128,72449" Width="699,21305" Height="22,67718" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[recebido]"/>
+      <TfrxMemoView Name="Memo9" Left="18,89765" Top="158,74026" Width="185,19697" Height="22,67718" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="A quantia subra de :"/>
+      <TfrxShapeView Name="Shape6" Left="18,89765" Top="181,07885" Width="710,55164" Height="30,23624" ShowHint="False" Color="15000804" Shape="skRoundRectangle"/>
+      <TfrxMemoView Name="Memo10" Left="24,01577" Top="185,07885" Width="699,21305" Height="22,67718" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[valor_extenso]"/>
+      <TfrxMemoView Name="Memo11" Left="18,89765" Top="219,21274" Width="287,24428" Height="22,67718" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Referente ao parcelamento : [numero]"/>
+      <TfrxMemoView Name="Memo12" Left="132,28355" Top="257,90569" Width="597,16574" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[local], [data_extenso]"/>
+      <TfrxLineView Name="Line1" Left="181,41744" Top="328,81911" Width="389,29159" Height="0" ShowHint="False" Diagonal="True"/>
+      <TfrxMemoView Name="Memo13" Left="302,3624" Top="336,37817" Width="139,84261" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="EMITENTE"/>
+    </TfrxReportTitle>
+  </TfrxReportPage>
+</TfrxReport>

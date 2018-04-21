@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.3.14" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Padrão" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="41424,6383353704" ReportOptions.Description.Text="" ReportOptions.LastChange="42696,3361425347" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frxOS" DataSetName="OS"/>
+  </Datasets>
+  <Variables>
+    <item Name=" VENDEDOR"/>
+    <item Name="VENDEDOR"/>
+    <item Name="DATAINI"/>
+    <item Name="DATAFIN"/>
+  </Variables>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="5" RightMargin="5" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="52,91342" Left="0" Top="18,89765" Width="755,906">
+      <TfrxMemoView Name="Memo1" Left="3,77953" Top="2,77953" Width="744,56741" Height="22,67718" Font.Charset="1" Font.Color="0" Font.Height="-19" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="Relatório de Ordem de Serviço"/>
+      <TfrxMemoView Name="Memo2" Left="5,11812" Top="29,01577" Width="83,14966" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Técnico :"/>
+      <TfrxMemoView Name="VENDEDOR" Left="95,82684" Top="29,01577" Width="616,06339" Height="18,89765" Text="[VENDEDOR]"/>
+    </TfrxReportTitle>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Font.Charset="1" Font.Color="0" Font.Height="-7" Font.Name="Arial" Font.Style="0" Height="49,13389" Left="0" ParentFont="False" Top="132,28355" Width="755,906" ColumnWidth="0" ColumnGap="0" DataSet="frxOS" DataSetName="OS" PrintIfDetailEmpty="True" RowCount="0">
+      <TfrxShapeView Name="Shape1" Left="2" Top="0,338590000000011" Width="752,12647" Height="45,35436"/>
+      <TfrxMemoView Name="Memo4" Left="2,55906" Top="1,77952999999999" Width="430,86642" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Período de [DATAINI] à [DATAFIN]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo5" Left="85,14966" Top="22,45671" Width="94,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Cliente"/>
+      <TfrxMemoView Name="Memo7" Left="326,30736" Top="22,67718" Width="102,04731" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Total Serviços"/>
+      <TfrxMemoView Name="Memo8" Left="657,53587" Top="22,67718" Width="75,5906" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Total OS"/>
+      <TfrxMemoView Name="Memo17" Left="430,86642" Top="22,67718" Width="83,14966" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Total Itens"/>
+      <TfrxMemoView Name="Memo3" Left="6,55906" Top="23,67718" Width="60,47248" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="OS"/>
+      <TfrxMemoView Name="Memo9" Left="521,57514" Top="22,67718" Width="109,60637" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Valor Desconto"/>
+    </TfrxMasterData>
+    <TfrxDetailData Name="DetailData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="204,09462" Width="755,906" ColumnWidth="0" ColumnGap="0" DataSet="frxOS" DataSetName="OS" PrintIfDetailEmpty="True" RowCount="0">
+      <TfrxMemoView Name="VENDAS_COMISSOESVENDA" Left="2,55906" Top="1,77952999999999" Width="75,5906" Height="15,11812" DataField="ID_OS" DataSet="frxOS" DataSetName="OS" Font.Charset="1" Font.Color="16711680" Font.Height="-12" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OS.&#34;ID_OS&#34;]"/>
+      <TfrxMemoView Name="VENDAS_COMISSOESNOME_CLI" Left="84,14966" Top="1,77952999999999" Width="234,33086" Height="15,11812" DataField="NOME_CLI" DataSet="frxOS" DataSetName="OS" Font.Charset="1" Font.Color="16711680" Font.Height="-12" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OS.&#34;NOME_CLI&#34;]"/>
+      <TfrxMemoView Name="VENDAS_COMISSOESTOTAL_VENDA" Left="325,27582" Top="1,77952999999999" Width="102,04731" Height="15,11812" DataField="VALOR_SERVICOS" DataSet="frxOS" DataSetName="OS" Font.Charset="1" Font.Color="16711680" Font.Height="-12" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OS.&#34;VALOR_SERVICOS&#34;]"/>
+      <TfrxMemoView Name="Memo11" Left="655,84292" Top="2" Width="94,48825" Height="15,11812" DataField="VALOR_TOTAL" DataSet="frxOS" DataSetName="OS" Font.Charset="1" Font.Color="16711680" Font.Height="-12" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OS.&#34;VALOR_TOTAL&#34;]"/>
+      <TfrxMemoView Name="Memo16" Left="430,86642" Top="2" Width="83,14966" Height="15,11812" DataField="VALOR_ITENS" DataSet="frxOS" DataSetName="OS" Font.Charset="1" Font.Color="16711680" Font.Height="-12" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OS.&#34;VALOR_ITENS&#34;]"/>
+      <TfrxMemoView Name="Memo10" Left="521,57514" Top="2" Width="109,60637" Height="15,11812" DataField="VALOR_DESCONTO" DataSet="frxOS" DataSetName="OS" Font.Charset="1" Font.Color="16711680" Font.Height="-12" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OS.&#34;VALOR_DESCONTO&#34;]"/>
+    </TfrxDetailData>
+    <TfrxReportSummary Name="ReportSummary1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="26,45671" Left="0" Top="287,24428" Width="755,906">
+      <TfrxMemoView Name="Memo35" Left="525,35467" Top="5,77953000000002" Width="120,94496" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Total Geral : "/>
+      <TfrxMemoView Name="Memo36" Left="650,07916" Top="5,77953000000002" Width="94,48825" Height="18,89765" DataSetName="COMISSOES" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" HAlign="haRight" Text="[SUM(&#60;OS.&#34;VALOR_TOTAL&#34;&#62;,DetailData1)]"/>
+      <TfrxLineView Name="Line1" Left="3,77953" Top="3,77953000000002" Width="748,34694" Height="0" Color="0" Frame.Typ="4"/>
+    </TfrxReportSummary>
+  </TfrxReportPage>
+</TfrxReport>
