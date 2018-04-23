@@ -1,6 +1,8 @@
-#Caiman ERP
+Caiman ERP
 
 Pronto para compilar no Delphi Berlin
+
+ATENÇÃO: NÃO VENDA ESSES FONTES!!! COLABORE COM A COMUNIDADE DELPHI!!!
 
 Nota Fiscal Eletrônica (NF-e 3.1);
 Nota Fiscal Consumidor Eletrônica (NFC-e);
@@ -12,5 +14,6 @@ Utilitários (Backup, gera arquivos para balanças Toledo e Filizola, etc)
 Não serão disponibilizados os Componentes de Terceiro, em breve será elaborada uma lista dos mesmos.
 
 Caso precise de suporte para compilar, entre em contato conosco.
+Se quiser ser um colaborador, nos contate.
 
 Caiman caimanerp@gmail.com
