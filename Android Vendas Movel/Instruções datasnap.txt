@@ -1,0 +1,21 @@
+///////////////Arquivo enviado por Programador mobile sistemas//////////
+
+Instalar o Unidac(componente de conexão) com instalador.
+
+Instalar o FGX(tela de aguarde) abrir o projeto e compilar o DPK
+lembrar de adicionar a library tanto para win32 como para Android.
+
+No exemplos do delphi você vai encontrar o listview multidetail
+que fica no C:\Users\Public\Documents\Embarcadero\Studio\18.0\Samples\Object Pascal\Multi-Device Samples\User Interface\ListView\ListViewMultiDetailAppearance
+abrir o DPK e instalar.(OBS o caminho pode variar de acordo com seu delphi e windows)
+
+Apos estar tudo instalado abrir o projeto e compilar.
+
+Junto vai um arquivo fdb para teste com as tabelas e alguns dados
+
+Configurar a conexao no componente sqlconnection e configurar o 
+IP e demais dados do seu servidor.
+
+Tem 2 forms,1 principal com varias tabs, e outro de cadastro com tabs tambem
+utilizo tabs pois muitos forms deixam o app lento, entao para ver
+tudo que tem em um form e so navegar entre as tabs de um tabcontrol.

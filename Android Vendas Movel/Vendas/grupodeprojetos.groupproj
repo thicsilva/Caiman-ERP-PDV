@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{BBE225B6-F625-4C26-8519-C57FA1EB2A7B}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="vendas10.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="servidor\servidor.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="vendas10">
+        <MSBuild Projects="vendas10.dproj"/>
+    </Target>
+    <Target Name="vendas10:Clean">
+        <MSBuild Projects="vendas10.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="vendas10:Make">
+        <MSBuild Projects="vendas10.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="servidor">
+        <MSBuild Projects="servidor\servidor.dproj"/>
+    </Target>
+    <Target Name="servidor:Clean">
+        <MSBuild Projects="servidor\servidor.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="servidor:Make">
+        <MSBuild Projects="servidor\servidor.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="vendas10;servidor"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="vendas10:Clean;servidor:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="vendas10:Make;servidor:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
